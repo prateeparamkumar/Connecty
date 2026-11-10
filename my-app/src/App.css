@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  min-height: 1000vh;
+  background-color: #0db9e8;
+  font-family: Arial, sans-serif;
+}
+.header {
+  background-color: #172554;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h2 {
+  font-size: 26px;
+}
+.header nav {
+  display: flex;
+  gap: 25px;
+}
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.main-container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+.welcome-section {
+  margin-bottom: 30px;
+}
+.welcome-section h1 {
+  color: #172554;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.welcome-section p {
+  color: #64748b;
+}
+.contact-form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #172554;
+}
+.contact-form form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+}
+.contact-form input {
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+.contact-form button {
+  background-color: #2563eb;
   color: white;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
 }
-
-.App-link {
-  color: #61dafb;
+.contact-form button:hover {
+  background-color: #1d4ed8;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-list h2 {
+  color: #172554;
+  margin-bottom: 20px;
+}
+.contact-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e2e8f0;
+}
+.contact-card h3 {
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+.contact-card p {
+  color: #64748b;
+  margin-bottom: 5px;
+}
+.contact-card button {
+  background-color: #263edc;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.contact-card button:hover {
+  background-color: #1c24b9;
 }
